@@ -1,0 +1,173 @@
+<!doctype>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="Camera Pasal">		<!-- meta tag used-->
+	<meta name="keywords" content="Camera Pasal">
+	<meta name="author" content="Sushant Chaudhary">
+	<title>Camera Pasal</title>						<!-- Name of website to display on tab bar-->
+	<link rel="icon" type="image/x-icon" href="images/ShutterCutout.png">	<!-- logo of website to display in tab bar along with name of website-->
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+<div class="whole" style="background-color:rgb(245, 245, 245)"> <!--Background colour changed-->
+	<div class="container">
+		<div class="navbar">
+			<img src="images/ShutterCutout.png" class="logo"> <!--Logo of shutterChunks placed-->
+				<ul><!--Lisiting the menus in the navbar-->
+					<li> <a href="#"><b>HOME</b></a> </li>
+					<li> <a href="html/product.html"><b>PRODUCTS</b></a> </li>
+					<li> <a href="html/research.html"><b>RESEARCH</b></a> </li>
+					<li> <a href="html/aboutUs.html"><b>ABOUT US</b></a> </li>
+					<li> <a href="html/blog.html"><b>BLOG</b></a> </li>
+					<input type="text" placeholder="Search.." style="border-radius: 50px;">
+			
+				</ul>
+		</div>
+		
+	</div>
+			<!--Division For Featured Products-->
+	<div class="buy" style="background-color: #FF4081;">
+		<h2 style="text-align: center;"><a href="html/product.html" class="btn">FEATURED PRODUCTS &#9759;</a></h2>
+			<div class="row-2">
+				<div class="col-3" style="background-color: rgb(74 144 226 / 29%);">
+					<img src="images/Gopro.png">
+					<h4 style="padding-top: 100; padding-left:50">GoPro Hero Black 11<br><strike>Rs. 81,500</strike><br>Rs. 74,500</h4>
+				</div>
+
+				<div class="col-4" style="background-color:rgb(74 144 226 / 29%);">
+					<img src="images/Nikon.png">
+					<h4 style="padding-left: 80; padding-top:60;">Nikon D5600<br><strike>Rs. 75,000</strike><br>Rs. 68,000</h4>
+				</div>
+
+				<div class="col-5" style="background-color:rgb(74 144 226 / 29%);">
+					<img src="images/Drone.png">
+					<h4 style="padding-left: 50; padding-top:70">DJI Mini Combo Drone<br><strike>Rs. 69,000</strike><br>Rs. 60,999</h4>
+				</div>
+
+				<div class="col-6" style="background-color:rgb(74 144 226 / 29%);">
+					<img src="images/Cambag.png">
+					<h4 style="text-align: center;   padding-top: 25;">Camera Bag<br><strike>Rs. 18,900</strike><br>Rs. 15,000</h4>
+				</div>
+				<div class="col-7" style="background-color:rgb(74 144 226 / 29%);">
+					<img src="images/Gimbal.png">
+					<h4 style="padding-left: 100; padding-top:30">Gimbal<br><strike>Rs. 29,999</strike><br>Rs. 25,900</h4>
+				</div>
+			</div>
+	</div>
+	<div class="col-2">
+		<!--Internal CSS is used-->
+		<style>
+					.sliderContainer{
+						width: 95%;
+						height: 450px;
+						margin: auto auto;
+						box-shadow:5px 5px 12px 5px teal ;
+						box-sizing: border-box;
+						border-radius: 30px;
+						
+					}
+					.sliderContainer img{
+						width: 100%;
+						height: 100%;
+						border-radius: 30px;
+					}
+			</style>
+			<!--Internal CSS ends-->
+			<div class="sliderContainer">
+				<div id="imgSlide">
+				</div>
+			</div>
+			<!--Internal JavaScript is used-->
+			<script>
+					var imagePath = ['images/ban.jpg','images/bann.jpg','images/banner.jpg','images/banne.jpg','images/five.jpg'];
+					var imgSlider= document.getElementById("imgSlide");
+					var index = 0;
+					setInterval(slide,500);
+					function slide(){
+						if (index<imagePath.length){
+						index= index + 1 ;
+					}else{
+						index = 1;
+					}
+					imgSlider.innerHTML = "<img src=" + imagePath[index-1] + ">";
+				}
+			</script>
+			<!--Internal JavaScript Ends-->
+	</div>
+	<!--Division for the featured products ends-->
+
+	<div class="section-1">
+		<div class="research_section">
+				<div class="col-11">
+					<a href="html/research.html">
+						<img src="images/Research.jpeg" style="border-radius: 50px; width: 75%;"></a>
+				</div>
+				<div class="col-12">
+						<p style="color: black; padding-left: 50; padding-top: 30;padding-right: 50">An organized process of enquiry, research aims to learn new things about a certain subject.It involves utilizing a range of methodologies to obtain data, analyze it, and then come to conclusions based on the information that has been gathered.The ultimate purpose of research is to improve our understanding of the subject matter.</p>
+						<a href="html/Research.html" class="btn">Research</a><!--Use of Anchor Tag-->
+				</div>
+		</div>
+		<div class="about_section">
+			<div class="col-11">
+				<a href="html/aboutUs.html">
+				<img src="images/about.jpg" style="border-radius: 50px; width: 100%;"></a>
+			</div>
+			<div class="col-12">
+				<p style="color: black; padding-left: 50; padding-top: 30;padding-right: 50">ShutterChunks is developed by the Innovatives; a group of four creative and dynamic individuals. We are motivated by a common love of innovation and a desire to have an important impact on our field of study. The Innovatives are committed to exploring new ideas, pushing boundaries and reflecting uniqueness.
+				</p>
+				<a href="html/aboutUs.html" class="btn">About Us</a> <!--Use of Anchor tag-->
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!--Footer begins-->
+
+<footer class="footerclass" style="background-color:rgb(51, 51, 51);"> <!--creating main footer class-->
+	<div class="footermain"> <!--creating subclass for footer-->
+
+		<table width="50%" style="margin: auto;" >
+			
+			<tr>
+				<th>
+					<th class="menu">
+						<a href="https://www.facebook.com">
+						<img src="images/fb2.png" style="height: 50px; width:100px"></a>
+					</th>
+				</th>
+				
+				<th>
+					<th class="menu">
+						<a href="https://instagram.com">
+						<img src="images/ins.png" style="height:40px; width: 50px;"></a> 
+					</th>
+				</th>
+				<th>
+					<th class="menu">
+						<a href="https://www.twitter.com">
+						<img src="images/twi.png" style="height:30px"; width="60px"; ></a>
+					</th>
+				</th>
+
+				<th>
+					<th class="menu">
+					<a href="https://www.linkedin.com">
+					<img src="images/ln.png" style="height:50px" width="60px"></a>
+					</th>
+				</th>
+			</tr>
+		</table>
+		
+
+		<section align="center">
+			<p><h3>Camera Pasal</h3></p>
+			<p>Address: Lalitpur,Nepal</p>
+			<p>Contact Us: campasal@gmail.com</p>
+			 <a href style="color: black;">&copy; Camera Pasal</a>
+	</div>
+        
+</footer>
+<!--Footer Ends-->	
+</body>
+</html>       

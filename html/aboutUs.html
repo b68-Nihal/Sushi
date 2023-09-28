@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="description" content="About Us Page of ShutterChunks"><!--meta tags used-->
+        <meta name="keywords" content="About Us Page of ShutterChunks">
+        <meta name="author" content="Sudikkshya Gyawali">
+        <title>About Us</title>
+        <!-- Link to CSS file -->
+        <link rel="stylesheet" href="../css/stylee.css">
+  </head>
+    <body style="background-color:  rgb(245, 245, 245);"><!--changing the body background colour-->
+      <div class="navbar">
+          <img src="../images/ShutterCutout.png" class="logo">
+            <ul>
+
+                <li> <a href="../index.html"><b>HOME</b></a> </li>
+                <li> <a href="product.html"><b>PRODUCTS</b></a> </li>
+                <li> <a href="research.html"><b>RESEARCH</b></a> </li>
+                <li> <a href="aboutUs.html"><b>ABOUT US</b></a> </li>
+                <li> <a href="blog.html"><b>BLOG</b></a> </li>
+                <input type="text" placeholder="Search.." style="border-radius: 50px;">
+      
+            </ul>
+    </div>
+  
+  <br><br>
+  <div class="desc" style="text-align:center">
+        <h1 style="margin: 0px;">Camera Pasal</h1>
+        <p style="margin: 0px; padding-top: 10px;"><b>Camera Pasal is an online retailer that offers a variety of photographic products.<br> We offer a vast selection of photography equipment, in-house photography services, and the highest quality lab services.<br>We focus on producing quality goods. </b></p>
+  </div>
+  
+  <main>
+        
+      <section class="card">
+            <div class="card__image">
+                  <img src="../images/Sushant.jpg"  height="250">
+            </div>
+            <div class="card__content">
+                <h2 class="card__title">Sushant Chaudhary</h2>
+                <p class="card__description">Manager<br>Camera Pasal</p>
+                <a href="Sushi.html" class="card__link">View more</a>
+            </div>
+      </section>
+  </main>
+</head>
+  <body> 
+<div class="feedback-form" style="background-image: url(../images/frame.jpg);">
+    <h2>Feedback Form</h2>
+    <form name="Form" onsubmit="validateForm()">
+  <label>Name:</label>
+  <input type="text" name="Name"> <br><br>
+  <label>Email:</label>
+  <input type="text" name="Email"><br><br>
+  <label>Contact:</label>
+  <input type="text" name="Contact"><br><br>
+  <label>Gender:</label>
+  <input type="radio"name="genderdetails"checked value="male">Male
+  <input type="radio" name="genderdetails" value="female">female
+  <br><br>
+  <label>Are you an existing member?</label>
+  <input type="radio"name="member"checked value="Yes">Yes
+  <input type="radio" name="member" value="No">No
+  <br><br>
+  <label>Feedback:</label>
+    <br>
+    <textarea name="feedback"rows="10" cols="31"placeholder="Enter a message.."></textarea>
+
+    <br>
+    <input type="submit"value="Submit">
+  </form>
+  <!--java is used-->
+  <script type="text/javascript">
+    function validateForm() {
+      var Name =document.forms["Form"]["Name"].value;
+      var Email =document.forms["Form"]["Email"].value;
+      var Contact =document.forms["Form"]["Contact"].value;
+      var Gender = document.forms["Form"]["genderdetails"].value;
+      var Areyouanexistingmember= document.forms["Form"]["member"].value;
+      var messageValue =document.forms["Form"]["feedback"].value;
+
+      if(Name ==""|| Email==""|| Contact==""||messageValue==""){
+        alert("Empty fields are found. Please fill all the fields...");
+      }else{
+        alert("Thank you for your valuable feedback!!!");
+      }
+    }
+  </script>
+</div>
+<section>
+  </main>
+  <br><br>
+  <!--footer begins-->
+  
+  <footer class="footerclass" style="background-color:rgb(51, 51, 51);"> <!--creating main footer class-->
+    <div class="footermain"> <!--creating subclass for footer-->
+  
+      <table width="50%" style="margin: auto;" >
+        
+        <tr>
+          <th>
+            <th class="menu">
+              <a href="https://www.facebook.com">
+              <img src="../images/fb2.png" style="height: 50px; width:100px"></a>
+            </th>
+          </th>
+          
+          <th>
+            <th class="menu">
+              <a href="https://instagram.com">
+              <img src="../images/ins.png" style="height:40px; width: 50px;"></a> 
+            </th>
+          </th>
+          <th>
+            <th class="menu">
+              <a href="https://www.twitter.com">
+              <img src="../images/twi.png" style="height:30px"; width="60px"; ></a>
+            </th>
+          </th>
+  
+          <th>
+            <th class="menu">
+            <a href="https://www.linkedin.com">
+            <img src="../images/ln.png" style="height:50px" width="60px"></a>
+            </th>
+          </th>
+        </tr>
+      </table>
+      
+  
+      <section align="center">
+        <p><h3>Camera Pasal</h3></p>
+        <p>Address: Lalitpur,Nepal</p>
+        <p>Contact Us: campasal@gmail.com</p>
+         <a href style="color: black;">&copy; Camera Pasal</a>
+    </div>
+          
+  </footer>
+<!--End of Footer-->
+
+
+
+
+</body>
+</html>
+      
